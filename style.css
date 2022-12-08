@@ -18,6 +18,10 @@
         font-family: 'Gilroy';
     }
     
+    h1 {
+        text-align: center;
+    }
+    
     a {
         text-decoration: none !important;
         margin: 2.5px 5px;
@@ -179,6 +183,12 @@
     }
     /* Student Card End */
     /* Blog Card Start  */
+    
+    .blogBody {}
+    
+    .blogBody .purpulDots {
+        justify-content: center;
+    }
     
     .slick-dots {
         display: flex;
@@ -1171,6 +1181,14 @@
         -o-border-radius: 20px;
     }
     
+    .news a {
+        color: #000;
+    }
+    
+    .s_newsMainCard a {
+        color: #000;
+    }
+    
     .pTwo i {
         font-size: 22px;
         color: #fff;
@@ -1208,7 +1226,7 @@
         align-items: center;
         background: #fff;
         border-radius: 20px;
-        padding: 2px 7px;
+        padding: 6px 10px;
         flex-direction: row;
         position: relative;
     }
@@ -2348,15 +2366,14 @@
     }
     /* About Page Section  */
     
-    .mainContainer_about {
-        position: absolute;
-        top: 132px;
+    .container_a {
         width: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        z-index: -1;
+        padding-top: 130px;
+        padding: 130px 40px 20px 40px;
     }
     
     .container_about {
@@ -2372,4 +2389,12 @@
         overflow: hidden;
         padding: 20px;
         border-radius: 5px;
+    }
+    
+    .purpulDots .purpulDots li {
+        background: #00000000 !important;
+    }
+    
+    .purpulDots .purpulDots li button {
+        background: #00000000 !important;
     }
