@@ -9,10 +9,10 @@ $(".i_cardSection").slick({
     responsive: [{
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 3,
                 infinite: true,
-                dots: true,
+                dots: false,
             },
         },
         {
@@ -21,7 +21,8 @@ $(".i_cardSection").slick({
                 slidesToShow: 2,
                 slidesToScroll: 2,
                 prevArrow: false,
-                nextArrow: false
+                nextArrow: false,
+                dots: false,
             },
         },
         {
@@ -29,6 +30,7 @@ $(".i_cardSection").slick({
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                dots: false,
             },
         },
     ],

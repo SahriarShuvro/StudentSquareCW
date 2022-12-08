@@ -10,6 +10,5 @@ multipleBTN.forEach((btnAll) => {
     });
 });
 
-
-
-console.log(`hi`);
+let hi = document.querySelector('.blogBody .slick-dots')
+hi.setAttribute('class', 'purpulDots')

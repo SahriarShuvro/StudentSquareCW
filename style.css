@@ -139,7 +139,7 @@
     }
     
     .studentCard {
-        width: 218px !important;
+        width: 218px;
         box-shadow: 5px 5px 7px #b8b8b8, -5px -5px 7px #ffffff;
         border-radius: 35px;
         height: 335px;
@@ -200,6 +200,8 @@
     
     .slick-dots li button {
         background: #fff;
+        font-weight: bold;
+        margin: 0 4px;
     }
     
     .blogCard {
@@ -554,6 +556,14 @@
         flex-wrap: wrap;
     }
     
+    .blogBody .slick-dots {
+        justify-content: center;
+    }
+    
+    .blogBody .slick-dots ul li button {
+        font-weight: bold;
+    }
+    
     .blogFooter {
         width: 100%;
     }
@@ -745,11 +755,17 @@
     
     .counsellingDots {
         position: absolute;
-        top: 69.4%;
-        left: 49.5%;
+        top: 70%;
+        left: 53.5%;
+        padding: 0;
+        margin: 0;
     }
     
-    .counsellingDots .slick-active {
+    .slidingMainAreaSection .counsellingDots .slick-dots {
+        background: #000;
+    }
+    
+    .slidingMainAreaSection .counsellingDots slick-active {
         background: #70309F;
         display: flex;
         justify-content: center;
@@ -773,15 +789,23 @@
         -moz-transition: 0.4s;
         -ms-transition: 0.4s;
         -o-transition: 0.4s;
-        color: #0000;
-    }
-    
-    .counsellingDots li button:hover {
-        background: #70309F;
     }
     
     .counsellingDots .slick-active {
         background: #70309F;
+    }
+    
+    .counsellingDots .slick-active button {
+        color: #70309F;
+    }
+    
+    .counsellingDots li:hover {
+        color: #70309F;
+        background: #70309F;
+    }
+    
+    .counsellingDots li button:hover {
+        color: #70309F;
     }
     /* Inspiring Section  */
     
@@ -853,17 +877,16 @@
     }
     
     .i_cardSection {
-        display: flex !important;
+        display: flex;
         margin: 5px;
         width: 100%;
         justify-content: space-evenly;
-        flex-wrap: wrap;
         position: relative;
-        justify-content: center !important;
+        justify-content: center;
     }
     
     .i_cardSection .slick-list {
-        width: 90%;
+        width: 100%;
     }
     
     .responsiveNextPriBTN {
@@ -959,9 +982,8 @@
         }
         .counsellingDots {
             top: 75.4%;
-            left: 39.5%;
+            left: 35.5%;
         }
-        .counsellingDots li button {}
     }
     /* Inmage Dis Section  */
     /* Head  */
@@ -1529,6 +1551,23 @@
         .buttonSection {
             font-size: 10px;
         }
+        .counsellingDots {
+            position: absolute;
+            top: 84%;
+            left: 45.5%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 770px) {
+        .counsellingDots {
+            position: absolute;
+            top: 84%;
+            left: 43.5%;
+            padding: 0;
+            margin: 0;
+        }
     }
     
     @media only screen and (max-width: 900px) {
@@ -1759,6 +1798,13 @@
     }
     
     @media only screen and (max-width: 630px) {
+        .counsellingDots {
+            position: absolute;
+            top: 74%;
+            left: 36%;
+            padding: 0;
+            margin: 0;
+        }
         .blogHeadBTN {
             width: 100%;
         }
@@ -1852,8 +1898,28 @@
         .studentCard {
             width: 170px;
         }
-        .sCardImg {
+        /* .sCardImg {
             width: 170px;
+        } */
+    }
+    
+    @media only screen and (max-width: 300px) {
+        .counsellingDots {
+            position: absolute;
+            top: 77%;
+            left: 30%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    
+    @media only screen and (max-width: 330px) {
+        .counsellingDots {
+            position: absolute;
+            top: 76%;
+            left: 29%;
+            padding: 0;
+            margin: 0;
         }
     }
     
@@ -2098,12 +2164,11 @@
         .slick-dots li button {
             width: 10px;
             height: 10px;
-            background-color: #d6d6d6;
             border-radius: 50%;
             font-size: 0px;
             border: 0;
         }
-        .slick-dots .slick-active button {
+        .blogBody .slick-dots .slick-active button {
             background-color: var(--green-color);
         }
         .s_newsMainCard {
@@ -2291,6 +2356,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        z-index: -1;
     }
     
     .container_about {
