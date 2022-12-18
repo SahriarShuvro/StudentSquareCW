@@ -328,11 +328,12 @@
         align-items: center;
     }
     
-    #language {
-        word-wrap: normal;
-        border: none;
-        cursor: pointer;
-    }
+  #language {
+    word-wrap: normal;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
     
     *,
      ::after,
