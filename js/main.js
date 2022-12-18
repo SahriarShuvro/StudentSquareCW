@@ -6,7 +6,7 @@ multipleBTN.forEach((btnAll) => {
         multipleBTN.forEach((btnSingle) => {
             btnSingle.classList.remove("active");
         });
-        btnAll.classList.add("active");
+        btnAll.classList.toggle("active");
     });
 });
 
